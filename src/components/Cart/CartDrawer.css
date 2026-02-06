@@ -1,0 +1,156 @@
+.cart-drawer {
+  position: fixed;
+  top: 0;
+  right: -360px;
+  width: 300px;
+  height: 100vh;
+  background: linear-gradient(180deg, #1f2933, #111827);
+  color: #f9fafb;
+  padding: 20px;
+  box-shadow: -6px 0 20px rgba(0, 0, 0, 0.4);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.cart-drawer.open {
+  right: 0;
+}
+
+.close-btn {
+  align-self: flex-end;
+  background: transparent;
+  color: #c9982e;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #db2626;
+}
+
+.cart-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 10px; */
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 6px;
+}
+
+.item-name {
+  flex: 1;
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.qty-btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #374151;
+  border-radius: 4px;
+  background: #1f2933;
+  color: #f9fafb;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.qty-btn:hover {
+  background: #3b82f6;
+}
+
+.qty {
+  min-width: 20px;
+  text-align: center;
+}
+
+.item-total {
+  width: 60px;
+  text-align: right;
+  font-weight: 500;
+}
+
+.clear-btn {
+  margin: 8px 0;
+  padding: 8px 10px;
+  background: #db2626;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.clear-btn:hover {
+  background: #ff4d4d;
+  transform: translateY(-1px);
+}
+
+.cart-drawer input {
+  margin-top: 12px;
+  padding: 10px;
+  width: 92%;
+  border-radius: 6px;
+  border: 1px solid #374151;
+  background-color: #111827;
+  color: #f9fafb;
+  outline: none;
+  font-size: 14px;
+}
+
+.cart-drawer input::placeholder {
+  color: #9ca3af;
+}
+
+.cart-drawer input:focus {
+  border-color: #3b82f6;
+}
+
+.cart-drawer button:not(.close-btn):not(.clear-btn) {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  background: #3b82f6;
+  color: #ffffff;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.cart-drawer button:not(.close-btn):not(.clear-btn):hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+.message {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.message:has(:not(.success)) {
+  color: #f87171;
+}
+
+.empty-message {
+  font-size: 14px;
+  color: #15cc68;
+  margin-top: 20px;
+  text-align: center;
+}

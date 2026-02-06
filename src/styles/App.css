@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Biscotti&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2b2a2a; 
+  color: #e0e0e0; 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.5rem;
+  background: linear-gradient(90deg, #1f2937 0%, #111827 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid #3b82f6;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Biscotti', cursive;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #3b82f6, #10b981);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header button {
+  position: relative;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #3b82f6; 
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+header button:hover {
+  background-color: #2563eb; 
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.add-button {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #6d28d9, #4f46e5);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  font-weight: bold;
+}
+.add-button:hover {
+  opacity: 0.9;
+}
+
+/* .product-card {
+  background-color: #1f2937;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 220px;
+  text-align: center;
+  color: #e0e0e0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.7);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #3b82f6;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+  color: #cbd5e1;
+}
+
+.product-card .price {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #10b981;
+}
+
+.product-card button {
+  margin-top: 0.5rem;
+  padding: 8px 12px;
+  background-color: #10b981;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.product-card button:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+} */
+  

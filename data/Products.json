@@ -1,0 +1,118 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Laptop",
+      "price": 1200,
+      "description": "High-performance laptop for work and gaming."
+    },
+    {
+      "id": "2",
+      "name": "Headphones",
+      "price": 150,
+      "description": "Noise-cancelling over-ear headphones."
+    },
+    {
+      "id": "3",
+      "name": "Smartphone",
+      "price": 900,
+      "description": "Latest model smartphone with OLED display."
+    },
+    {
+      "id": "4",
+      "name": "Smartwatch",
+      "price": 250,
+      "description": "Water-resistant smartwatch with fitness tracking."
+    },
+    {
+      "id": "5",
+      "name": "Tablet",
+      "price": 600,
+      "description": "Lightweight tablet with high-resolution screen."
+    },
+    {
+      "id": "6",
+      "name": "Camera",
+      "price": 800,
+      "description": "Digital camera with 4K video recording."
+    },
+    {
+      "id": "7",
+      "name": "Bluetooth Speaker",
+      "price": 100,
+      "description": "Portable Bluetooth speaker with deep bass."
+    },
+    {
+      "id": "8",
+      "name": "Gaming Console",
+      "price": 500,
+      "description": "Next-gen gaming console with immersive graphics."
+    },
+    {
+      "id": "9",
+      "name": "E-reader",
+      "price": 120,
+      "description": "Lightweight e-reader with adjustable backlight."
+    },
+    {
+      "id": "10",
+      "name": "Wireless Charger",
+      "price": 40,
+      "description": "Fast wireless charger compatible with all devices."
+    },
+    {
+      "id": "11",
+      "name": "External Hard Drive",
+      "price": 150,
+      "description": "2TB external hard drive for extra storage."
+    },
+    {
+      "id": "12",
+      "name": "Fitness Tracker",
+      "price": 80,
+      "description": "Fitness tracker with heart rate monitoring."
+    },
+    {
+      "id": "13",
+      "name": "Action Camera",
+      "price": 300,
+      "description": "Durable action camera for extreme sports."
+    },
+    {
+      "id": "14",
+      "name": "Drone",
+      "price": 400,
+      "description": "Quadcopter drone with HD camera."
+    },
+    {
+      "id": "15",
+      "name": "Smart Home Hub",
+      "price": 130,
+      "description": "Central hub for smart home devices."
+    },
+    {
+      "id": "80be",
+      "name": "Fardin",
+      "description": "Test Insertion",
+      "price": 200
+    },
+    {
+      "id": "6984",
+      "name": "Fardin 2",
+      "description": "Test Intersion 2",
+      "price": 500
+    },
+    {
+      "id": "0611",
+      "name": "Fardin 3",
+      "description": "Test 3",
+      "price": 100
+    },
+    {
+      "id": "4a9d",
+      "name": "Fardin 4",
+      "description": "Test 4",
+      "price": 1000
+    }
+  ]
+}
