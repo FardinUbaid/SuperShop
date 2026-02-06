@@ -79,8 +79,6 @@ function CartDrawer() {
           </div>
         ))}
       </div>
-
-      {/* Sticky footer */}
       <div className="cart-footer">
         <hr />
         <h3>Total: ${total}</h3>

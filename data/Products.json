@@ -113,6 +113,12 @@
       "name": "Fardin 4",
       "description": "Test 4",
       "price": 1000
+    },
+    {
+      "id": "d6d5",
+      "name": "New Product",
+      "description": "jkhkljl",
+      "price": 6
     }
   ]
 }
