@@ -42,7 +42,6 @@ function CartDrawer() {
       </button>
 
       <h2>Cart</h2>
-      <hr />
 
       {items.length > 0 && (
         <button
@@ -52,49 +51,53 @@ function CartDrawer() {
           Clear Cart
         </button>
       )}
-      <hr />
 
-      {items.length === 0 && <p className="empty-message">Cart is empty</p>}
+      <div className="cart-items-container">
+        {items.length === 0 && <p className="empty-message">Cart is empty</p>}
 
-      {items.map(item => (
-        <div key={item.id} className="cart-item-row">
-          <span className="item-name">{item.name}</span>
+        {items.map(item => (
+          <div key={item.id} className="cart-item-row">
+            <span className="item-name">{item.name}</span>
 
-          <div className="quantity-controls">
-            <button
-              onClick={() => dispatch(removeFromCart(item))}
-              className="qty-btn"
-            >
-              –
-            </button>
-            <span className="qty">{item.quantity}</span>
-            <button
-              onClick={() => dispatch(addToCart(item))}
-              className="qty-btn"
-            >
-              +
-            </button>
+            <div className="quantity-controls">
+              <button
+                onClick={() => dispatch(removeFromCart(item))}
+                className="qty-btn"
+              >
+                –
+              </button>
+              <span className="qty">{item.quantity}</span>
+              <button
+                onClick={() => dispatch(addToCart(item))}
+                className="qty-btn"
+              >
+                +
+              </button>
+            </div>
+
+            <span className="item-total">${item.price * item.quantity}</span>
           </div>
+        ))}
+      </div>
 
-          <span className="item-total">${item.price * item.quantity}</span>
-        </div>
-      ))}
+      {/* Sticky footer */}
+      <div className="cart-footer">
+        <hr />
+        <h3>Total: ${total}</h3>
 
-      <hr />
-      <h3>Total: ${total}</h3>
+        <input
+          type="number"
+          placeholder="Enter paid amount"
+          value={paidAmount}
+          onChange={(e) => setPaidAmount(e.target.value)}
+        />
 
-      <input
-        type="number"
-        placeholder="Enter paid amount"
-        value={paidAmount}
-        onChange={(e) => setPaidAmount(e.target.value)}
-      />
+        <button onClick={checkout}>
+          Checkout
+        </button>
 
-      <button onClick={checkout}>
-        Checkout
-      </button>
-
-      {message && <p className="message">{message}</p>}
+        {message && <p className="message">{message}</p>}
+      </div>
     </div>
   );
 }
